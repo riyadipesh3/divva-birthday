@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf5e8">
+  <title>A little birthday secret — for Divva, from Daniel</title>
+  <meta name="description" content="A little birthday surprise for Divva. With good memories and a note from Daniel.">
+  <meta property="og:title" content="Psst, Divva. A little birthday surprise awaits.">
+  <meta property="og:description" content="A little celebration, from Daniel. Open your invitation.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="celebration.css">
+  <script src="gate.js" defer></script>
+</head>
+<body class="is-locked">
+  <div class="welcome-shell" id="welcome">
+    <div class="welcome-top"><span>✳ &nbsp; A LITTLE CELEBRATION</span><span>AN INVITATION, JUST FOR YOU</span></div>
+    <div class="welcome-stage">
+      <div class="welcome-stripes" aria-hidden="true"></div>
+      <div class="balloon-cluster balloons-left" aria-hidden="true"><i class="balloon b-pink"></i><i class="balloon b-sage"></i><i class="balloon b-butter"></i></div>
+      <div class="balloon-cluster balloons-right" aria-hidden="true"><i class="balloon b-butter"></i><i class="balloon b-pink"></i><i class="balloon b-sage"></i></div>
+      <span class="welcome-spark ws-one" aria-hidden="true">✳</span><span class="welcome-spark ws-two" aria-hidden="true">✴</span><span class="welcome-spark ws-three" aria-hidden="true">✧</span><span class="welcome-spark ws-four" aria-hidden="true">✧</span>
+      <section class="welcome-card" aria-labelledby="welcome-title">
+        <div class="mini-envelope" aria-hidden="true"><span>D</span></div>
+        <p class="eyebrow">SOMETHING GOOD IS WAITING INSIDE</p>
+        <h1 id="welcome-title">Psst, <em>Divva.</em></h1>
+        <p class="welcome-intro">I made you a little something.<br>A few memories. A birthday wish.<br>And a note I've been meaning to write.</p>
+        <form id="unlock-form">
+          <label for="birthday-password">Your secret password</label>
+          <div class="password-field"><input type="password" id="birthday-password" autocomplete="current-password" spellcheck="false" autocapitalize="none" required aria-describedby="password-status"><button type="button" id="show-password" aria-label="Show password" aria-pressed="false">Show</button></div>
+          <p id="password-status" role="status" aria-live="polite"></p>
+          <button class="button dark unlock-button" id="unlock-button" type="submit"><span class="unlock-label">Let the birthday begin</span><span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="welcome-signature handwritten">For you, from Daniel.</p>
+        <span class="welcome-postmark">SEALED WITH GOOD WISHES · 22 OCTOBER</span>
+      </section>
+    </div>
+    <p class="welcome-bottom">A good day to celebrate a very good friend.</p>
+    <noscript><p class="no-script">Please enable JavaScript to open your birthday invitation.</p></noscript>
+  </div>
+  <div id="celebration-root" hidden></div>
+  <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Ⅱ Pause motion</button>
+</body>
+</html>
